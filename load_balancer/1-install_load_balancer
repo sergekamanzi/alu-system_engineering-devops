@@ -15,8 +15,8 @@ frontend  chukwuonyejustice_frontend
         default_backend chukwuonyejustice_backend
 backend chukwuonyejustice_backend
         balance roundrobin
-        server 5783-web-01 34.207.185.176:80 check
-        server 5783-web-02 54.234.114.204:80 check
+        server 5783-web-01 34.201.99.46:80 check
+        server 5783-web-02 54.87.32.168:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
