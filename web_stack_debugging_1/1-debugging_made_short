@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# This script starts Nginx and checks its status
+# script that configs server
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx start
-if ! sudo service nginx status | grep -q "nginx is running"; then
-  echo " * nginx is not running"
-fi
